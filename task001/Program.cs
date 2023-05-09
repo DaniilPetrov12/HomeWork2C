@@ -14,12 +14,16 @@ int num2 = number % 100;
 int num3 = num2 / 10;
 int num4 = num1 * 10 + num3;
 int num5 = number / 1000;
-if (num5 == num4)
+if((number / 100000 > 0)||(number/10000<=0))
+{
+    Console.WriteLine("Число не пятизначное");
+}
+else if (num5 == num4)
 {
     Console.WriteLine("yes");
 
 }
-else{
+ else{
     Console.WriteLine("no");
 
 }

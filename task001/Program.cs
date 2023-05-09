@@ -14,7 +14,7 @@ int num2 = number % 100;
 int num3 = num2 / 10;
 int num4 = num1 * 10 + num3;
 int num5 = number / 1000;
-if((number / 100000 > 0)||(number/10000<=0))
+if((number > 100000 )||(number<10000))
 {
     Console.WriteLine("Число не пятизначное");
 }

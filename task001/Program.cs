@@ -7,11 +7,14 @@
 
 
 
-Console.Write("Введите число =  ");
+Console.Write("Введите пятизначное число =  ");
 int number = Convert.ToInt32(Console.ReadLine());
-int rev = number % 100;
-int ver = number / 100;
-if (ver+rev==ver+rev)
+int num1 = number % 10;
+int num2 = number % 100;
+int num3 = num2 / 10;
+int num4 = num1 * 10 + num3;
+int num5 = number / 1000;
+if (num5 == num4)
 {
     Console.WriteLine("yes");
 
